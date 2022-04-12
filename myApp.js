@@ -1,4 +1,10 @@
 require("dotenv").config();
+let mongoose = require("mongoose");
+
+mongoose.connect(
+  "mongodb+srv://haydensprinkle:Dumile71@cluster0.4m1sl.mongodb.net/Cluster0?retryWrites=true&w=majority",
+  { useNewUrlParser: true, useUnifiedTopology: true }
+);
 
 console.log("Hello World!");
 
